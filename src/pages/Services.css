@@ -1,0 +1,232 @@
+/* SERVICES HERO */
+.services-hero {
+  position: relative;
+  height: 40vh;
+  min-height: 250px;
+  background-color: hsl(var(--color-sage-deep));
+  /* background-image: url('/images/zen_bloom_hair.jpg'); */
+  background-size: cover;
+  background-position: center 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: var(--header-height);
+}
+
+.services-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 68, 59, 0.75);
+  z-index: 1;
+}
+
+.services-hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+.services-hero-title {
+  color: hsl(var(--color-white));
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 8px;
+}
+
+.services-hero-subtitle {
+  color: hsl(var(--color-gold-light));
+  font-size: 1rem;
+}
+
+/* CATEGORY TABS */
+.services-category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: clamp(40px, 6vw, 60px);
+  border-bottom: 1px solid hsl(var(--color-light-gray));
+  padding-bottom: 16px;
+}
+
+.service-tab-button {
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: hsl(var(--color-gray));
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-normal);
+}
+
+.service-tab-button:hover {
+  color: hsl(var(--color-sage-deep));
+  background-color: hsl(var(--color-sage-light) / 0.3);
+}
+
+.service-tab-button.active {
+  background-color: hsl(var(--color-sage-deep));
+  color: hsl(var(--bg-primary));
+}
+
+/* SERVICES LIST */
+.services-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: hsl(var(--color-white));
+  border-radius: var(--border-radius-lg);
+  padding: clamp(24px, 5vw, 60px);
+  box-shadow: var(--shadow-md);
+  border: 1px solid hsl(var(--color-light-gray));
+}
+
+.services-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: clamp(30px, 5vw, 50px);
+}
+
+.services-list-header h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: hsl(var(--color-charcoal));
+  text-align: center;
+}
+
+.services-rates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.service-rate-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.rate-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: hsl(var(--color-charcoal));
+  margin: 0;
+  line-height: 1.2;
+}
+
+.rate-leader {
+  flex-grow: 1;
+  height: 1px;
+  border-bottom: 1px dotted hsl(var(--color-gray) / 0.4);
+  margin-bottom: 4px;
+}
+
+.rate-price {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(var(--color-sage-deep));
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.rate-desc-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.rate-desc {
+  font-size: 0.875rem;
+  color: hsl(var(--color-gray));
+  line-height: 1.6;
+  max-width: 70%;
+  margin: 0;
+}
+
+.btn-book-service {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--color-gold-dark));
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.btn-book-service:hover {
+  color: hsl(var(--color-sage-deep));
+  border-color: hsl(var(--color-sage-deep));
+}
+
+.services-booking-cta {
+  margin-top: 50px;
+  border-top: 1px solid hsl(var(--color-light-gray));
+  padding-top: 40px;
+  text-align: center;
+}
+
+.services-booking-cta p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* SERVICES NOTES */
+.notes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.note-card {
+  background-color: hsl(var(--color-white));
+  padding: 30px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid hsl(var(--color-sage));
+}
+
+.note-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: hsl(var(--color-sage-deep));
+}
+
+.note-card p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .rate-desc-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .notes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
