@@ -85,7 +85,7 @@ export default function Footer({ setCurrentPage, onOpenBooking }) {
       <div className="footer-bottom">
         <div className="container bottom-container">
           <p className="copyright-text">
-            Copyright &copy; {new Date().getFullYear()} ZEN BLOOM HAIR &amp; BEAUTY SPA. All Rights Reserved.
+            Copyright &copy; {new Date().getFullYear()} ZEN BLOOM HAIR &amp; BEAUTY SPA. All Rights Reserved. | <a href="https://bosonforge.vercel.app/" target="_blank" rel="noreferrer" className="developer-credit-link">built by BosonForge</a>
           </p>
           <div className="legal-links">
             <a href="#privacy" className="legal-link">Privacy Policy</a>

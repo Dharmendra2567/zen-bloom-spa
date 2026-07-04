@@ -181,6 +181,17 @@
   text-align: center;
 }
 
+.developer-credit-link {
+  color: hsl(var(--bg-primary) / 0.5);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.developer-credit-link:hover {
+  color: hsl(var(--color-gold));
+  text-decoration: underline;
+}
+
 .legal-links {
   display: flex;
   align-items: center;

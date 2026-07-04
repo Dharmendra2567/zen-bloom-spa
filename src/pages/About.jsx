@@ -174,6 +174,13 @@ export default function About({ onOpenBooking }) {
           </button>
         </div>
       </section>
+
+      {/* Developer Credit */}
+      <div className="about-credit-footer">
+        <p>
+          Website <a href="https://bosonforge.vercel.app/" target="_blank" rel="noopener noreferrer">built by BosonForge</a>
+        </p>
+      </div>
     </div>
   );
 }
